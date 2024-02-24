@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".MainDangKy">
+
+    <TextView
+        android:textColor="#994C00"
+        android:layout_marginTop="210dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:fontFamily="@font/black"
+        android:text="SIGN UP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:background="@drawable/custom_edtext"
+        android:id="@+id/dktaikhoan"
+        android:drawableRight="@drawable/icon_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/regular"
+        android:hint="Tài khoản "></EditText>
+
+    <EditText
+        android:background="@drawable/custom_edtext"
+        android:id="@+id/dkmatkhau"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Mật khẩu "
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/icon_matkhau"
+        android:layout_width="250dp"
+        android:fontFamily="@font/regular"
+        android:layout_height="50dp"></EditText>
+    <EditText
+        android:background="@drawable/custom_edtext"
+        android:id="@+id/dkemail"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Email"
+        android:drawableRight="@drawable/icon_email"
+        android:layout_width="250dp"
+        android:fontFamily="@font/regular"
+        android:layout_height="50dp"></EditText>
+    <Button
+        android:background="@drawable/custom_button"
+        android:id="@+id/btndangky"
+        android:text="SIGN UP"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:backgroundTint="#000"
+        android:fontFamily="@font/regular"
+        android:layout_height="wrap_content"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có tài khoản ? " />
+
+        <TextView
+            android:textColor="#FFC107"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:id="@+id/backLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOG IN " />
+
+    </LinearLayout>
+
+
+</LinearLayout>

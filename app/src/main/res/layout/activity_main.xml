@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".MainLogin">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/black"
+        android:text="LOGIN"
+        android:textColor="#994C00"
+        android:textSize="50sp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:background="@drawable/custom_edtext"
+        android:id="@+id/taikhoan"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Đăng nhập"
+        android:drawableRight="@drawable/icon_login"
+        android:textColorHint="#68000000"
+        android:layout_width="250dp"
+        android:textColor="#000"
+        android:fontFamily="@font/regular"
+        android:layout_height="50dp"></EditText>
+    <EditText
+        android:drawableRight="@drawable/icon_matkhau"
+        android:background="@drawable/custom_edtext"
+        android:id="@+id/matkhau"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#68000000"
+        android:textColor="#000"
+        android:layout_width="250dp"
+        android:fontFamily="@font/regular"
+        android:layout_height="50dp"></EditText>
+
+    <CheckBox
+        android:id="@+id/ckbRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78dp"
+        android:buttonTint="#120F0F"
+        android:ellipsize="none"
+        android:fontFamily="@font/regular"
+        android:text="Remember me"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:checkedState="checked"></CheckBox>
+
+    <Button
+        android:id="@+id/dangnhap"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#000"
+        android:fontFamily="@font/regular"
+        android:text="Log in"
+        android:textSize="16dp"></Button>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|bottom"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:fontFamily="@font/regular"
+        android:text="OR"></TextView>
+
+    <Button
+        android:background="@drawable/custom_button"
+        android:id="@+id/dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000"
+        android:fontFamily="@font/regular"
+        android:onClick="Dangkyusers"
+        android:text="SIGN UP"
+        android:textSize="16dp"></Button>
+</LinearLayout>
+

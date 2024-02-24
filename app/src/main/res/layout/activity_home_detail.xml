@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_Detail">
+
+    <ImageButton
+        android:id="@+id/btnExt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+
+    <!--Thông tin Truyện dùng này thay background luôn/-->
+    <LinearLayout
+        android:id="@+id/lnlo1"
+        android:layout_below="@id/btnExt"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/borderblack"
+        android:orientation="horizontal">
+        <!--ảnh chính-->
+        <ImageView
+            android:id="@+id/imgMain"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/borderblack"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/doraemon" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+
+            android:paddingRight="10dp">
+            <!--Tên Truyện-->
+            <TextView
+                android:id="@+id/tvNameComic"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Doraemon"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+            <!--Tên tác giả-->
+            <TextView
+                android:id="@+id/tvNameAuthor"
+                android:layout_width="214dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Fujiko F. Fujio"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+            <!--Thể loại-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/primaryradius"
+                        android:padding="2dp"
+                        android:text="manga"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+            <!--Đánh giá-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:id="@+id/imgRating"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#FFEB3B"
+                    android:background="@drawable/icon_start"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="Đánh giá ngay!"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+            <!--yêu Thích-->
+            <ImageView
+                android:id="@+id/imgFavorite"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/baseline_favorite_shadow" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnlo2"
+        android:layout_below="@id/lnlo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp">
+        <Button
+            android:id="@+id/btnSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:text="Tóm tắt"
+            android:textAllCaps="false"
+            android:textSize="13dp" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btnChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:text="Mục lục"
+            android:textAllCaps="false"
+            android:textSize="13dp" />
+    </LinearLayout>
+    <!--Tóm tắt  && Viết bình luận-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/lnlo2"
+        android:layout_above="@id/btnStart"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lnlo2"
+            android:layout_above="@id/btnStart">
+            <!--Tóm tắt-->
+
+            <TextView
+                android:id="@+id/tvSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/siliver_background"
+                android:padding="10dp"
+                android:text="doraemon"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <!--Viết bình luậ-->
+            <Button
+                android:id="@+id/btnComment"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tvSummary"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:text="Viết bình luận"
+                android:background="@drawable/radius_drawble"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <!--Danh sách chap-->
+    <ListView
+        android:id="@+id/lvchap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lnlo2"
+        android:layout_above="@id/btnStart"
+        android:visibility="invisible"/>
+    <!--Bắt đầu đọc-->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/radius_drawble"
+        android:text="Bắt đầu đọc" />
+</RelativeLayout>

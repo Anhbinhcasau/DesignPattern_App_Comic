@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Setting">
+
+
+    <TextView
+        android:id="@+id/fontSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TEXT"
+        android:text="Font Size"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp" />
+
+    <SeekBar
+        android:id="@+id/fontSizeSeekBar"
+        style="@style/BUTTON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fontSizeLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/brightnessLabel"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brightness"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/fontSizeSeekBar"
+        android:layout_marginLeft="16dp" />
+
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        style="@style/BUTTON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brightnessLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/nightModeLabel"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night Mode"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/brightnessSeekBar"
+        android:layout_marginLeft="16dp" />
+
+    <Switch
+        android:id="@+id/nightModeSwitch"
+        style="@style/BUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brightnessSeekBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/BUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/nightModeLabel"
+        android:layout_marginLeft="25dp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="@style/BUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/nightModeLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
